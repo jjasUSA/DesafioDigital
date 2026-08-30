@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- ===================================================================================== -->
+<!-- HEAD -->
+<!-- ===================================================================================== -->
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>DesafioDigital</title>
+    <link rel="icon" href="../Principal/assets/Digital3.png" type="image/png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../Principal/css/styles.css">
+
+</head>
+
+<!-- ===================================================================================== -->
+<!-- BODY -->
+<!-- ===================================================================================== -->
+
+<body>
+
+    <!-- ================================================================================= -->
+    <!-- HEADER -->
+    <!-- ================================================================================= -->
+
+    <header>
+
+        <nav>
+
+            <!-- <h1>DesafioDigital</h1> -->
+            <h1>
+                <span class="blanco">Desafio</span><span class="rojo">Digital</span>
+            </h1>
+
+            <ul>
+                <li>
+                    <a href="../Index.html">
+                        Home
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- ================================================================================= -->
+    <!-- CONTENEDOR -->
+    <!-- ================================================================================= -->
+
+    <div class="container">
+
+        <!-- ================================================================================= -->
+        <!-- MAIN -->
+        <!-- ================================================================================= -->
+
+        <main>
+
+            <!-- ================================================================================= -->
+            <!-- CABECERA -->
+            <!-- ================================================================================= -->
+
+            <div class="centrado">
+
+                <div class="header-linea">
+
+                    <img src="../Principal/assets/DesafioDigital.jpg" alt="Logo DesafioDigital" width="200" height="75">
+
+                    <h1 class="titulo-noticias">
+                        Contacto
+                    </h1>
+
+                </div>
+
+            </div>
+
+            <!-- ================================================================================= -->
+            <!-- FORMULARIO -->
+            <!-- ================================================================================= -->
+
+            <div class="audio-container">
+
+                <div class="audio-block">
+
+                    <h1>Contacto:</h1>
+
+                    <!-- ====================================================== -->
+                    <!-- FORM -->
+                    <!-- ====================================================== -->
+
+                    <form id="miFormulario">
+
+                        <!-- NOMBRE -->
+                        <input type="text" id="nombre" placeholder="Nombre completo" required>
+
+                        <!-- EMAIL -->
+                        <input type="email" id="email" placeholder="Correo electrónico" required>
+
+                        <!-- TELEFONO -->
+                        <input type="tel" id="telefono" placeholder="Teléfono">
+
+                        <!-- CODIGO POSTAL -->
+                        <input type="number" id="cp" placeholder="Código Postal" required>
+
+                        <!-- SELECT -->
+                        <select id="asunto" required>
+
+                            <option value="" disabled selected>
+                                Selecciona un asunto
+                            </option>
+
+                            <option value="consulta">
+                                Consulta
+                            </option>
+
+                            <option value="soporte">
+                                Soporte
+                            </option>
+
+                            <option value="opinion">
+                                Opinión
+                            </option>
+
+                            <option value="otro">
+                                Otro
+                            </option>
+
+                        </select>
+
+                        <!-- MENSAJE -->
+                        <textarea id="mensajeTexto" placeholder="Escribe tu mensaje aquí..." required>
+                        </textarea>
+
+                        <!-- BOTON -->
+                        <button type="submit">
+                            Enviar
+                        </button>
+
+                        <button type="button" id="nuevoMensaje">
+                            Nuevo Mensaje
+                        </button>
+
+                    </form>
+
+                    <!-- ====================================================== -->
+                    <!-- MENSAJE -->
+                    <!-- ====================================================== -->
+
+                    <br>
+
+                    <div id="mensaje" class="mensaje-exito" style="display: none;">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ================================================================================= -->
+            <!-- LISTADO MENSAJES -->
+            <!-- ================================================================================= -->
+
+            <div class="audio-container">
+
+                <div class="audio-block">
+
+                    <h1>Mensajes Guardados</h1>
+
+                    <div id="listaMensajes">
+
+                        <!-- JS INSERTA MENSAJES -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- ================================================================================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ================================================================================= -->
+
+    <script src="../Contacto/js/app.js"></script>
+
+</body>
+
+</html>

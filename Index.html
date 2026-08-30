@@ -1,0 +1,668 @@
+<!-- CORRECTO -->
+
+<!DOCTYPE html>
+<html lang="es">
+<!--************************************************   HEAD   ************************************************-->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>DesafioDigital</title>
+    <link rel="icon" href="./Principal/assets/Digital3.png" type="image/png">
+    <!-- <link rel="icon" href=".assets/Digital3.png" type="image/png"> -->
+    <!-- Enlace al archivo de estilos externos -->
+    <link rel="stylesheet" href="./Principal/css/styles.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Incluir Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRAB5KJ2JlKH4Q2aHnLg4X5z5m6jGoIV3t7DA6jD2fPz12D9vGzsa5g7B" crossorigin="anonymous">
+
+</head>
+
+<!--************************************************   BODY   ************************************************-->
+
+<body>
+    <!-- ************************************* HEADER  -->
+    <!-- Encabezado de la página -->
+
+    <header>
+        <nav>
+            <!-- <h1>DesafioDigital</h1>  -->
+            <!-- Menú de navegación con NUEVE ELEMENTOS -->
+            <h2>
+                <span class="blanco">Desafio</span><span class="rojo">Digital</span>
+            </h2>
+
+            <ul>
+                <!-- ==================================================== -->
+                <!-- MENU PRINCIPAL - HOME -->
+                <li><a href="index.html" id="home-link" class="nav-link">Home</a></li>
+                <!-- ==================================================== -->
+
+                <!-- ==================================================== -->
+                <!-- MENU MEDIOS -->
+                <!-- SUBMENÚ -->
+                <li class="dropdown"> <a href="#">Medios ▾</a>
+                    <!-- ==================== -->
+                    <ul class="submenu">
+
+                        <!-- ==================== -->
+                        <!-- PERIÓDICOS -->
+                        <li class="dropdown"> <a href="#">Periódicos ▸</a>
+                            <ul class="submenu">
+                                <li><a href="https://elpais.com" target="_blank">El País</a></li>
+                                <li><a href="https://www.elmundo.es" target="_blank">El Mundo</a></li>
+                                <li><a href="https://www.abc.es" target="_blank">ABC</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- ==================== -->
+                        <!-- REVISTAS -->
+                        <li class="dropdown"> <a href="#">Revistas ▸</a>
+                            <ul class="submenu">
+                                <li><a href="https://www.nationalgeographic.com.es" target="_blank">National
+                                        Geographic</a></li>
+                                <li><a href="https://www.muyinteresante.com" target="_blank">Muy Interesante</a></li>
+                                <li><a href="https://www.hola.com" target="_blank">Hola</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- ==================== -->
+                        <!-- CINE -->
+                        <li class="dropdown"> <a href="#">Cine Today ▸</a>
+                            <ul class="submenu">
+                                <li><a href="https://www.filmaffinity.com/es/" target="_blank">FilmAffinity</a></li>
+                                <li><a href="https://www.sensacine.com" target="_blank">Sensacine</a></li>
+                                <li><a href="https://www.imdb.com" target="_blank">IMDb</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- ==================== -->
+                        <!-- TV -->
+                        <li class="dropdown"> <a href="#">TV Best ▸</a>
+                            <ul class="submenu">
+                                <li><a href="https://www.rtve.es" target="_blank">RTVE</a></li>
+                                <li><a href="https://www.antena3.com" target="_blank">Antena 3</a></li>
+                                <li><a href="https://www.telecinco.es" target="_blank">Telecinco</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- ==================== -->
+                        <!-- MUSICA -->
+                        <li class="dropdown"> <a href="#">Música ▸</a>
+                            <ul class="submenu">
+                                <li><a href="https://open.spotify.com" target="_blank">Spotify</a></li>
+                                <li><a href="https://music.youtube.com" target="_blank">YouTube Music</a></li>
+                                <li><a href="https://soundcloud.com" target="_blank">SoundCloud</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- ==================== -->
+                        <!-- FOTOGRAFIA -->
+                        <li class="dropdown">
+                            <a href="#">Fotografía ▸</a>
+                            <ul class="submenu">
+                                <li><a href="https://www.nhm.ac.uk/visit/exhibitions/wildlife-photographer-of-the-year.html"
+                                        target="_blank">Wildlife Photographer of the Year (Natural History Museum)</a>
+                                </li>
+                                <li><a href="https://www.fotografiska.com/" target="_blank">Fotografiska (Museo
+                                        Internacional de Fotografía)</a></li>
+                                <li><a href="https://www.moma.org/collection/works?classifications=photographs"
+                                        target="_blank">MoMA - Colección de Fotografía (Nueva York)</a></li>
+                            </ul>
+                        </li>
+                        <!-- ==================== -->
+                    </ul>
+                </li>
+                <!-- ==================================================== -->
+
+                <!-- ==================================================== -->
+                <!-- MENU DIVERSION -->
+                <li><a href="./Diversion/index.html">Diversion</a></li>
+                <!-- ==================================================== -->
+
+                <!-- ==================================================== -->
+                <!-- MENU JUEGO SEMANAL -->
+                <li><a href="./Simon/index.html">Juego Semanal</a></li>
+                <!-- ==================================================== -->
+
+                <!-- ==================================================== -->
+                <!-- MENU TAREAS -->
+                <li><a href="MisTareas/tareas.html">Mis Tareas</a></li>
+                <!-- ==================================================== -->
+
+                <!-- ==================================================== -->
+                <!-- MENU INGLES -->
+                <li><a href="LearnEnglish/index.html">Aprende Ingles</a></li>
+                <!-- ==================================================== -->
+
+                <!-- ==================================================== -->
+                <!-- MENU EXPLORAR -->
+                <!-- SUBMENÚ -->
+                <li class="dropdown"> <a href="#">Explorar ▾</a>
+                    <ul class="submenu">
+                        <li><a href="https://earth.google.com/web/" target="_blank">Google Earth</a></li>
+                        <li><a href="https://worldview.earthdata.nasa.gov/" target="_blank">NASA Worldview</a></li>
+                        <li><a href="https://earth.nullschool.net/" target="_blank">Earth Nullschool</a></li>
+                        <li><a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a></li>
+                    </ul>
+                </li>
+                <!-- ==================================================== -->
+
+                <!-- ==================================================== -->
+                <!-- MENU DESCARGAS -->
+                <li class="dropdown"> <a href="#">Descargas▾</a>
+                    <ul class="submenu">
+                        <li><a href="Download/BlackJack.rar" download>🎮Blackjack</a></li>
+                        <li><a href="Download/Reglas_BlackJack.pdf" download>Reglas BlackJackk</a></li>
+                        <li><a href="Download/Bloc.rar" download>Block de Notas</a></li>
+                        <li><a href="Download/LearnEnglish.rar" download>LearnEnglish</a></li>
+                    </ul>
+                </li>
+                <!-- ==================================================== -->
+
+                <!-- ==================================================== -->
+                <!-- MENU CONTACTO -->
+                <li><a href="./Contacto/index.html">Contacto</a></li>
+                <!-- ==================================================== -->
+
+            </ul>
+        </nav>
+    </header>
+    <!-- ===================================================================================================== -->
+
+
+    <!-- ===================================================================================================== -->
+    <!-- Contenedor principal que agrupa aside izquierdo, main y aside derecho -->
+    <!-- ===================================================================================================== -->
+    <div class="container">
+
+        <!-- ===================================================================================================== -->
+        <!-- ************************************* ASIDE LEFT                          Barra lateral izquierda -->
+        <aside class="left">
+
+
+            <!-- ==================== -->
+            <div class="scroll">
+                <!-- Contenido izquierdo con scroll -->
+                <h3>Multimedia</h3>
+                <!-- Contenido con suficiente texto para activar scroll -->
+
+                <!-- ==================== -->
+                <!-- MULTIMEDIA  CARRUSEL -->
+                <div class="audio-container">
+                    <div class="audio-block">
+                        <h3>Galería</h3>
+                        <div class="carrusel">
+                            <!-- Radio buttons de control -->
+                            <input type="radio" name="carrusel" id="foto1" checked>
+                            <input type="radio" name="carrusel" id="foto2">
+                            <input type="radio" name="carrusel" id="foto3">
+                            <input type="radio" name="carrusel" id="foto4">
+                            <input type="radio" name="carrusel" id="foto5">
+                            <input type="radio" name="carrusel" id="foto6">
+                            <input type="radio" name="carrusel" id="foto7">
+                            <input type="radio" name="carrusel" id="foto8">
+
+                            <div class="imagenes">
+
+                                <div class="slide s1">
+                                    <img src="./Principal/assets/foto01.jpg" alt="Foto 1"
+                                        onclick="abrirImagen(this.src)">
+                                    <label for="foto8" class="btn izq">&#10094;</label>
+                                    <label for="foto2" class="btn der">&#10095;</label>
+                                </div>
+
+                                <div class="slide s2">
+                                    <img src="./Principal/assets/foto02.jpg" alt="Foto 2"
+                                        onclick="abrirImagen(this.src)">
+                                    <label for="foto1" class="btn izq">&#10094;</label>
+                                    <label for="foto3" class="btn der">&#10095;</label>
+                                </div>
+
+                                <div class="slide s3">
+                                    <img src="./Principal/assets/foto03.jpg" alt="Foto 3"
+                                        onclick="abrirImagen(this.src)">
+                                    <label for="foto2" class="btn izq">&#10094;</label>
+                                    <label for="foto4" class="btn der">&#10095;</label>
+                                </div>
+
+                                <div class="slide s4">
+                                    <img src="./Principal/assets/foto04.jpg" alt="Foto 4"
+                                        onclick="abrirImagen(this.src)">
+                                    <label for="foto3" class="btn izq">&#10094;</label>
+                                    <label for="foto5" class="btn der">&#10095;</label>
+                                </div>
+
+                                <div class="slide s5">
+                                    <img src="./Principal/assets/foto05.jpg" alt="Foto 5"
+                                        onclick="abrirImagen(this.src)">
+                                    <label for="foto4" class="btn izq">&#10094;</label>
+                                    <label for="foto6" class="btn der">&#10095;</label>
+                                </div>
+
+                                <div class="slide s6">
+                                    <img src="./Principal/assets/foto06.jpg" alt="Foto 6"
+                                        onclick="abrirImagen(this.src)">
+                                    <label for="foto5" class="btn izq">&#10094;</label>
+                                    <label for="foto7" class="btn der">&#10095;</label>
+                                </div>
+
+                                <div class="slide s7">
+                                    <img src="./Principal/assets/foto07.jpg" alt="Foto 7"
+                                        onclick="abrirImagen(this.src)">
+                                    <label for="foto6" class="btn izq">&#10094;</label>
+                                    <label for="foto8" class="btn der">&#10095;</label>
+                                </div>
+
+                                <div class="slide s8">
+                                    <img src="./Principal/assets/foto08.jpg" alt="Foto 8"
+                                        onclick="abrirImagen(this.src)">
+                                    <label for="foto7" class="btn izq">&#10094;</label>
+                                    <label for="foto1" class="btn der">&#10095;</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- VENTANA MODAL -->
+                        <!-- OJO ERROR VALIDADOR -->
+                        <div id="modalImagen" class="modal-imagen" onclick="cerrarImagen()">
+                            <span class="cerrar">&times;</span>
+                            <!-- <img id="imagenAmpliada" class="modal-contenido"> -->
+                            <img id="imagenAmpliada" class="modal-contenido" src="./Principal/assets/default.jpg"
+                                alt="Imagen ampliada">
+                        </div>
+                    </div>
+                </div>
+                <!-- ==================== -->
+
+                <!-- ==================== -->
+                <!-- MULTIMEDIA  VIDEO    -->
+
+                <div class="audio-container">
+                    <div class="audio-block">
+                        <h3>Trabajos AudioVisuales</h3>
+                        <br>
+                        <p>APIs Problemas</p>
+                        <video controls>
+                            <source src="./Principal/assets/Video7.mp4" type="video/mp4">
+                            Tu navegador no soporta la etiqueta de video.
+                        </video>
+                        <p>Cine</p>
+                        <video controls>
+                            <source src="./Principal/assets/video.mp4" type="video/mp4">
+                            Tu navegador no soporta la etiqueta de video.
+                        </video>
+                        <p>App Oscars</p>
+                        <video controls>
+                            <source src="./Principal/assets/VideoJJAS.mp4" type="video/mp4">
+                            Tu navegador no soporta la etiqueta de video.
+                        </video>
+                    </div>
+                </div>
+                <!-- ==================== -->
+
+                <!-- ==================== -->
+                <!-- <div class="audio-container"> 
+                    FUTURO
+                </div> -->
+                <!-- ==================== -->
+
+                <!-- ==================== -->
+                <!-- AUTO PUBLICIDAD      -->
+                <!-- Empleamos la misma Clase pero ponemos Texto -->
+                <!-- MEJORA -->
+                <div class="audio-container">
+                    <div class="audio-block publicidad-justificada">
+                        <div class="audio-block">
+                            <!-- <hr> -->
+                            <h3>DesafioDigital</h3>
+                            <!-- <hr> -->
+                            <!-- <br> -->
+                            <p> Unica web:
+                                <br>
+                                Dinámica e interactiva que reúne noticias, actualidad,
+                                vídeos, música, juegos, multimedia en un solo lugar.
+                            </p>
+                            <hr>
+                            <!-- <br> -->
+                            <p>Desafio:
+                                <br>
+                                Además de entretener, se impulsa el aprendizaje y el desarrollo personal con juegos
+                                mentales y aulas de aprendizaje para mejorar habilidades, se adquieren conocimientos y
+                                estimular
+                                la creatividad.
+                            </p>
+                            <hr>
+                            <!-- <br> -->
+                            <p>
+                                Su objetivo:
+                                <!-- <hr> -->
+                                <br>
+                                Es ofrecer una experiencia donde la información, diversión y educación se combinen en
+                                una
+                                única
+                                comunidad digital
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ==================== -->
+
+
+                <!-- MULTIMEDIA  AUDIO    -->
+                <!-- MEJORADA  -->
+                <div class="audio-container">
+                    <!-- Añadimos Clase NEON -->
+                    <div class="audio-container audio-neon">
+                        <!-- ==================== -->
+                        <div class="audio-block">
+                            <h3>Musica Relax</h3>
+                            <br>
+                            <p>Challenge</p>
+                            <audio controls>
+                                <source src="./Principal/assets/001.mp3" type="audio/mpeg">
+                                Tu navegador no soporta el audio.
+                            </audio>
+                        </div>
+                        <!-- ==================== -->
+                        <div class="audio-block">
+                            <p>Travel</p>
+                            <audio controls>
+                                <source src="./Principal/assets/002.mp3" type="audio/mpeg">
+                                Tu navegador no soporta el audio.
+                            </audio>
+                        </div>
+                        <!-- ==================== -->
+                        <div class="audio-block">
+                            <p>Motion</p>
+                            <audio controls>
+                                <source src="./Principal/assets/003.mp3" type="audio/mpeg">
+                                Tu navegador no soporta el audio.
+                            </audio>
+                        </div>
+                        <!-- ==================== -->
+                        <div class="audio-block">
+                            <p>World is Frozen</p>
+                            <audio controls>
+                                <source src="./Principal/assets/004.wav" type="audio/mpeg">
+                                Tu navegador no soporta el audio.
+                            </audio>
+                        </div>
+                        <!-- ==================== -->
+                        <div class="audio-block">
+                            <p>Voices Depths</p>
+                            <audio controls>
+                                <source src="./Principal/assets/005.wav" type="audio/mpeg">
+                                Tu navegador no soporta el audio.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MEJORA -->
+
+                <!-- MULTIMEDIA AUDIO -->
+            </div>
+        </aside>
+        <!-- ===================================================================================================== -->
+
+
+        <!-- ===================================================================================================== -->
+        <!-- ************************************* MAIN                             Sección principal de la página -->
+        <main>
+
+            <!-- ==================== -->
+            <h1 class="centered">Bienvenido a DesafioDigital</h1>
+            <!-- ==================== -->
+            <div class="centrado">
+                <div class="header-linea">
+                    <img src="./Principal/assets/DesafioDigital.jpg" alt="Logo del periódico" width="200" height="75">
+                    <h1 class="titulo-noticias">Ultimas Noticias</h1>
+                </div>
+            </div>
+            <!-- ==================== -->
+
+            <!-- ==================== -->
+            <section class="news-section">
+                <br>
+
+                <!-- ==================== -->
+                <div class="news-container">
+
+                    <!-- ==================== -->
+                    <!-- Noticia 1: Hantavirus -->
+                    <div class="news-item">
+                        <img src="./Principal/assets/hanta1.jpg" alt="Hanta Virus" class="news-image">
+                        <div class="news-text">
+                            <!-- <br> -->
+                            <h2>Hantavirus</h2>
+                            <p>
+                                El crucero MV Hondius con Hantavirus en Canarias: número de casos y última hora del
+                                brote hoy
+                            </p>
+                            <p class="source">Fuente: <a
+                                    href="https://www.20minutos.es/internacional/ultima-hora-hantavirus-barco-canarias-directo-pasajeros-enfermos_6966797_6.html"
+                                    target="_blank">www.20minutos.es</a></p>
+                        </div>
+                    </div>
+                    <br> <br>
+                    <!-- ==================== -->
+
+                    <!-- ==================== -->
+                    <!-- Noticia 2: Crisis en Ucrania -->
+                    <div class="news-item">
+                        <img src="./Principal/assets/ucrania1.jpg" alt="Crisis en Ucrania" class="news-image">
+                        <div class="news-text">
+                            <h2>Crisis en Ucrania</h2>
+                            <p>La guerra en Ucrania continúa, con miles de personas desplazadas y una situación
+                                humanitaria cada vez más crítica.</p>
+                            <!-- <a href="news2.html" class="read-more">Leer más</a> -->
+                            <!-- ERROR VALIDADOR -->
+                            <p class="source">
+                                Fuente:
+                                <a href="https://www.rtve.es/noticias/20250421/guerra-entre-ucrania-rusia-directo/16547011.shtml"
+                                    target="_blank">
+                                    Rtve - Radio Televisión Española
+                                </a>
+                            </p>
+
+                        </div>
+                    </div>
+                    <br> <br>
+                    <!-- ==================== -->
+
+                    <!-- ==================== -->
+                    <!-- Noticia 3: Descubrimiento científico -->
+                    <div class="news-item">
+                        <img src="./Principal/assets/Energia1.jpg" alt="Descubrimiento científico" class="news-image">
+                        <div class="news-text">
+                            <h2>Descubrimiento Científico</h2>
+                            <p>Científicos han descubierto una nueva forma de energía renovable que podría cambiar el
+                                futuro de la humanidad.</p>
+                            <!-- <a href="news3.html" class="read-more">Leer más</a> -->
+                            <p class="source">Fuente: <a
+                                    href="https://elpais.com/ciencia/2022-12-13/ee-uu-anuncia-un-logro-cientifico-historico-hacia-la-energia-inagotable-con-la-fusion-nuclear.html"
+                                    target="_blank">El Pais</a></p>
+                        </div>
+                    </div>
+                    <!-- ==================== -->
+
+                    <!-- ==================== -->
+                    <!-- Noticia 4: Atlante 3D -->
+                    <div class="news-item">
+                        <img src="./Principal/assets/Atlante.jpg" alt="Descubrimiento científico" class="news-image">
+                        <div class="news-text">
+                            <h2>Atlante</h2>
+                            <p>La figura destaca por una musculatura firme y bien definida, con un cuerpo de gran
+                                envergadura que transmite fortaleza física y resistencia. No es un guerrero en acción,
+                                sino un hombre contenido, cuya anatomía sugiere potencia latente más que movimiento.</p>
+                            <!-- <a href="news3.html" class="read-more">Leer más</a> -->
+                            <p class="source">Fuente: <a href="Guanche/index.html" class="read-more"
+                                    target="_blank">Abrir página
+                                    Guanche</a>></p>
+                        </div>
+                    </div>
+                    <!-- ==================== -->
+
+                    <!-- ==================== -->
+                    <!-- Noticia 5: Tiburon 3D -->
+                    <div class="news-item">
+                        <img src="./Principal/assets/Shark.jpg" alt="Tiburones 3D, esperimentalo" class="news-image">
+                        <div class="news-text">
+                            <h2>Tiburon 3D</h2>
+                            <p>Escucha!! .. Estás dentro de una jaula suspendida en el un oceano desconocido, rodeado de
+                                tiburones que
+                                se mueven con la cautela de un cazador, girando lentamente a tu alrededor, estudiantote,
+                                pues eres un intruso o una
+                                comida.
+                                Uno a uno se detienen, como si hubieran notado algo….
+                                La jaula se abre sin romperse, no entiendes que ha pasado, solo que estas fuera y ellos
+                                tambien….
+                                .</p>
+                            <!-- <a href="news3.html" class="read-more">Leer más</a> -->
+                            <p class="source">Fuente: <a href="Shark/index.html" class="read-more" target="_blank">Abrir
+                                    página Shark 3D</a>></p>
+                        </div>
+                    </div>
+                    <!-- ==================== -->
+                </div>
+
+            </section>
+        </main>
+
+        <!-- ===================================================================================================== -->
+
+        <!-- ===================================================================================================== -->
+        <!-- ************************************* ASIDE RIGHT                               Barra lateral derecha -->
+        <aside class="right">
+            <!-- Primer bloque con scroll si se aplica CSS -->
+            <div class="scroll">
+
+                <!-- ==================== -->
+                <!-- ************** REDES SOCIALES -->
+                <div class="audio-container">
+                    <div class="audio-block">
+                        <h3>Redes Sociales</h3>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                                <i class="fab fa-facebook-f"></i> Facebook
+                            </a>
+                            <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                                <i class="fab fa-twitter"></i> Twitter
+                            </a>
+                            <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                            <a href="https://www.linkedin.com" target="_blank" class="social-icon">
+                                <i class="fab fa-linkedin-in"></i> LinkedIn
+                            </a>
+                            <a href="https://www.youtube.com" target="_blank" class="social-icon">
+                                <i class="fab fa-youtube"></i> YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ==================== -->
+
+                <!-- ==================== -->
+                <!-- ************** BUSCADOR GOOGLE -->
+                <div class="audio-container">
+                    <div class="audio-block">
+                        <h3>Buscador Google</h3>
+                        <form action="https://www.google.com/search" method="get" target="_blank">
+                            <input type="text" name="q" placeholder="Buscar noticias en Google...">
+                            <button type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- ==================== -->>
+
+                <!-- ==================== -->
+                <!-- ************** TABLA INFORMACION -->
+                <div class="audio-container">
+                    <div class="audio-block">
+                        <h3>Streaming YouTube</h3>
+                        <br>
+                        <table class="tabla-oscar">
+                            <tbody>
+                                <tr>
+                                    <th rowspan="2">Fecha</th>
+                                    <td>1 de Julio</td>
+                                </tr>
+                                <tr>
+                                    <td>2026</td>
+                                </tr>
+
+                                <tr>
+                                    <th rowspan="2">Hora</th>
+                                    <td>20:00 (HL)</td>
+                                </tr>
+                                <tr>
+                                    <td>Canarias</td>
+                                </tr>
+
+                                <tr>
+                                    <th rowspan="2">Lugar</th>
+                                    <td>TEA</td>
+                                </tr>
+                                <tr>
+                                    <td>S.C. Tenerife</td>
+                                </tr>
+
+                                <tr>
+                                    <th>Online</th>
+                                    <td>
+                                        <a href="https://www.youtube.com/@megadocuhd7875" target="_blank"
+                                            rel="noopener noreferrer">
+                                            MegaDocuHD
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- ==================== -->
+
+            <!-- ==================== -->
+            <!-- Segundo bloque con más contenido -->
+            <div class="scroll">
+                <!-- Otro scroll -->
+            </div>
+            <!-- ==================== -->
+        </aside>
+    </div>
+
+    <!-- ===================================================================================================== -->
+    <!-- ************************************* FOOTER                                            Pie de página -->
+    <footer>
+        <p class="centered rojo-centro">® Tecnosoft - Professional Development</p>
+        <p class="rojo-centro"></p>
+    </footer>
+    <!-- ===================================================================================================== -->
+
+    <!-- ===================================================================================================== -->
+    <!-- ************************************* ENLACES BOOTSTRAP - JS -->
+    <!-- Bootstrap JS (final página) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz4fnFO9gyb60dAIVg2Qb7j1p5tG7oS+G9LJXvvC+R1fAdnFV+fHExzf9H"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-pzjw8f+ua7Kw1TIq0psdFC6Ew7JFt5jfomV1QeISmlz5UtTbhBfekdh3KK+OwrzE"
+        crossorigin="anonymous"></script>
+
+    <!-- Enlace script JavaScript -->
+    <script src="./Principal/js/script.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <!-- ===================================================================================================== -->
+</body>
+
+</html>
+
+<!-- ALMACEN -->
+<!-- ICONOS RECURSOS: 💬 📑 🎮🔍👁️‍🗨️👀 📎 ⏬ 🔥🔽-->

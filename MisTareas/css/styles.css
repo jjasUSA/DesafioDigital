@@ -1,0 +1,125 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../img/fondo.jpg');
+    /* Ruta de tu imagen */
+    background-repeat: no-repeat;
+    /* No repetir la imagen */
+    background-size: cover;
+    /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center;
+    /* Centra la imagen */
+}
+
+#mensaje {
+    margin-left: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+/* Contenedor de la tarea */
+.primer {
+    width: 800px;
+    height: 150px;
+    border: 3px solid turquoise;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+p {
+    color: black;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#nueva-tarea {
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.label {
+    margin-top: 10px;
+}
+
+/* Estilos para el segundo contenedor (contador y lista de tareas) */
+.second {
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contador {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 10px;
+    border: 3px solid turquoise;
+    border-radius: 5px;
+}
+
+button {
+    background-color: rgb(251, 255, 0);
+    color: rgb(39, 15, 15);
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: chartreuse;
+}
+
+/* Estilos para el menú de filtro */
+.menu-btn {
+    padding: 10px;
+    margin: 5px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.menu-btn.active {
+    background-color: #007bff;
+    color: white;
+}
+
+#label-tarea {
+    margin-left: 10px;
+
+}
+
+#form-tarea {
+    border: 3px solid turquoise;
+    border-radius: 5px;
+}
+
+
+/*AMPLIACION*/
+.volver-menu {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.volver-menu:hover {
+    background: #0056b3;
+}

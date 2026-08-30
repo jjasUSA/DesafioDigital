@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+
+    background-image: url('../img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    margin: 0;
+}
+
+/* Caja de login */
+.login-box {
+    width: 350px;
+    padding: 25px;
+
+    border: 3px solid turquoise;
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* Inputs */
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+
+    border: 2px solid turquoise;
+    border-radius: 5px;
+
+    outline: none;
+}
+
+/* Botón */
+button {
+    width: 95%;
+    padding: 10px;
+
+    background-color: rgb(251, 255, 0);
+    color: rgb(39, 15, 15);
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: chartreuse;
+}
+
+
+/*  */
+.volver-menu {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+
+    background: #007bff;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+.volver-menu:hover {
+    background: #0056b3;
+}

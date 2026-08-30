@@ -1,0 +1,321 @@
+/* ========================= */
+/* GENERAL */
+/* ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: black;
+
+    font-family: 'Press Start 2P', cursive;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    min-height: 100vh;
+
+    overflow-x: hidden;
+}
+
+/* ========================= */
+/* TITULO */
+/* ========================= */
+
+h1 {
+
+    text-align: center;
+
+    font-size: 2rem;
+
+    margin-top: 20px;
+
+    color: red;
+
+    text-shadow: 4px 4px 8px white;
+
+    padding: 10px;
+}
+
+/* ========================= */
+/* CONTENEDOR */
+/* ========================= */
+
+.simon {
+
+    margin-top: 40px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+/* ========================= */
+/* BOTONES COLORES */
+/* ========================= */
+
+.buttonContainer {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+
+    transform: rotate(45deg);
+}
+
+/* ========================= */
+/* CUADRADOS */
+/* ========================= */
+
+.square {
+
+    width: 170px;
+
+    height: 170px;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* ========================= */
+/* EFECTO ACTIVO */
+/* ========================= */
+
+/* .active {
+
+    filter: brightness(1.8);
+
+    transform: scale(1.05);
+
+    box-shadow: 0 0 30px white;
+} */
+
+.active {
+
+    filter: brightness(3);
+
+    transform: scale(1.15);
+
+    border: 6px solid white;
+
+    box-shadow:
+        0 0 20px white,
+        0 0 40px white,
+        0 0 60px white;
+
+    transition: 0.1s;
+}
+
+
+
+/* ========================= */
+/* COLORES */
+/* ========================= */
+
+.red {
+    background-color: #ed1f06;
+}
+
+.yellow {
+    background-color: #ffe600;
+}
+
+.blue {
+    background-color: #003cff;
+}
+
+.green {
+    background-color: #00d84a;
+}
+
+/* ========================= */
+/* CENTRO */
+/* ========================= */
+
+.centro {
+
+    margin-top: 80px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+/* ========================= */
+/* BOTONES */
+/* ========================= */
+
+#startButton,
+#round,
+#menuButton {
+
+    width: 220px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    font-family: 'Press Start 2P', cursive;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+/* START */
+
+#startButton {
+
+    background-color: red;
+
+    color: white;
+
+    text-shadow: 2px 2px 4px black;
+}
+
+/* ROUND */
+
+#round {
+
+    background-color: #222;
+
+    color: white;
+
+    display: none;
+}
+
+/* MENU */
+
+#menuButton {
+
+    background-color: white;
+
+    color: black;
+}
+
+/* HOVER */
+
+#startButton:hover,
+#round:hover,
+#menuButton:hover {
+
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+
+#pie {
+
+    color: red;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    margin-top: 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ========================= */
+/* GANADOR */
+/* ========================= */
+
+.winner {
+
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    h1 {
+
+        font-size: 1.3rem;
+    }
+
+    .square {
+
+        width: 120px;
+
+        height: 120px;
+    }
+
+    #startButton,
+    #round,
+    #menuButton {
+
+        width: 180px;
+
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .square {
+
+        width: 90px;
+
+        height: 90px;
+    }
+
+    .buttonContainer {
+
+        gap: 8px;
+    }
+
+    h1 {
+
+        font-size: 1rem;
+    }
+
+    #startButton,
+    #round,
+    #menuButton {
+
+        width: 150px;
+
+        padding: 10px;
+
+        font-size: 10px;
+    }
+
+    #pie {
+
+        font-size: 12px;
+    }
+}

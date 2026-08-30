@@ -1,0 +1,965 @@
+/* === RESETEO BÁSICO Y CONFIGURACIÓN DE CAJA === */
+* {
+    margin: 0;
+    /* Elimina márgenes por defecto de todos los elementos */
+    padding: 0;
+    /* Elimina padding por defecto */
+    box-sizing: border-box;
+    /* Incluye el padding y el borde dentro del ancho y alto total */
+}
+
+/* === HTML y BODY === */
+html,
+body {
+    height: 100%;
+    /* Ocupan toda la altura del viewport */
+    font-family: Arial, sans-serif;
+    /* Fuente para todo el sitio */
+    display: flex;
+    /* Usamos flexbox */
+    flex-direction: column;
+    /* Elementos en columna: header, nav, contenido, footer */
+}
+
+/* === MENÚ DE NAVEGACIÓN === */
+nav {
+    background-color: #444;
+    /* Color de fondo más claro que el header */
+    display: flex;
+    justify-content: space-between;
+    /* h1 a la izquierda, menú a la derecha */
+    align-items: center;
+    /* alinea verticalmente */
+    padding: 0 20px;
+    /* opcional, espacio horizontal */
+
+}
+
+nav ul {
+    list-style: none;
+    /* Quita los puntos de la lista */
+    display: flex;
+    /* Muestra los ítems del menú en línea */
+    justify-content: center;
+    /* Centra los elementos horizontalmente */
+    gap: 20px;
+    /* Espacio entre elementos del menú */
+    padding: 10px 0;
+    /* Espaciado arriba y abajo del menú */
+}
+
+nav ul li a {
+    color: white;
+    /* Texto blanco */
+    text-decoration: none;
+    /* Sin subrayado */
+    font-weight: bold;
+    /* Texto en negrita */
+    padding: 5px 10px;
+    /* Espaciado interno alrededor del enlace */
+    transition: background-color 0.3s, color 0.3s;
+    /* Transición suave al hacer hover */
+}
+
+nav ul li a:hover {
+    color: rgb(81, 245, 245);
+    /* Cambia el color del texto al pasar el mouse */
+    background-color: #555;
+    /* Cambia el fondo al pasar el mouse */
+    border-radius: 5px;
+    /* Bordes redondeados para el efecto hover */
+}
+
+nav h1 {
+    margin: 0;
+    /* Quita margen por defecto */
+    font-size: 24px;
+}
+
+/* === CONTENEDOR PRINCIPAL === */
+.container {
+    flex: 1;
+    /* Ocupa todo el espacio entre header y footer */
+    display: flex;
+    /* Usamos flexbox para organizar aside - main - aside */
+    padding: 20px;
+    /* Espaciado interno */
+    gap: 20px;
+    /* Espacio entre columnas */
+    overflow: auto;
+    /* Aparece scroll si el contenido desborda */
+    min-height: 0;
+    /* Previene errores de altura en flexbox */
+}
+
+/* === ASIDE (Laterales izquierdo y derecho) === */
+aside {
+    width: 20%;
+    /* Ocupa el 20% del ancho */
+    background-color: #f4f4f4;
+    /* Fondo gris claro */
+    padding: 15px;
+    /* Espaciado interno */
+    overflow-y: auto;
+    /* Scroll vertical si el contenido es largo */
+}
+
+aside p {
+    margin-bottom: 10px;
+    /* Espacio entre párrafos */
+}
+
+/* === MAIN (Contenido central) === */
+main {
+    flex: 1;
+    /* Ocupa el espacio restante entre los aside */
+    padding: 20px;
+    /* Espaciado interno */
+    background-color: #e2e2e2;
+    /* Fondo gris claro */
+    overflow: auto;
+    /* Scroll si el contenido excede */
+}
+
+main h1 {
+    margin-bottom: 15px;
+    /* Espacio inferior del título */
+}
+
+/* === FOOTER === */
+footer {
+    background-color: #333;
+    /* Fondo igual al header */
+    color: white;
+    /* Texto blanco */
+    text-align: center;
+    /* Centrado horizontal */
+    padding: 10px;
+    /* Espaciado interno */
+    width: 100%;
+    /* Ocupa todo el ancho */
+    margin-top: auto;
+    /* Empuja el footer hacia abajo al final de la página */
+}
+
+
+/*************** ESTILOS AUXILIARES ***************/
+
+/* Clase para centrar texto horizontalmente */
+.centered {
+    text-align: center;
+    /* Centra el texto dentro del elemento */
+    padding: 10px;
+    /* Sin relleno interno */
+    width: 100%;
+    /* Asegura que ocupe todo el ancho disponible */
+    margin: 0 auto;
+    /* Asegura que el pie de página se mantenga centrado */
+}
+
+/*************** AUDIO ***************/
+.audio-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Bloque individual de cada audio + título */
+.audio-block {
+    margin-bottom: 25px;
+}
+
+/* Texto descriptivo encima del audio */
+.audio-block p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Estilo del reproductor de audio */
+.audio-block audio {
+    width: 100%;
+    max-width: 100%;
+    border: 2px solid #007acc;
+    border-radius: 10px;
+    background-color: #e0e0e0;
+    padding: 5px;
+}
+
+/* AMPLIAMOS PARA EL FORMULARIO */
+/* Agrupamos input y botón */
+.audio-block form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.audio-block input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.audio-block button {
+    padding: 10px 20px;
+    background-color: #4e598c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.audio-block button:hover {
+    background-color: #3c456d;
+}
+
+video {
+    width: 180px;
+    /* Establece el ancho del reproductor de video */
+    border-radius: 12px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    /* Sombra suave debajo del video */
+}
+
+h3 {
+    text-align: center;
+    padding: 0;
+}
+
+.carrusel {
+    position: relative;
+    width: 180px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+}
+
+.carrusel input {
+    display: none;
+}
+
+.imagenes {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    /* transition: transform 0.5s ease; */
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    user-select: none;
+}
+
+.btn.izq {
+    left: 5px;
+}
+
+.btn.der {
+    right: 5px;
+}
+
+/* Mostrar solo la slide activa */
+#foto1:checked~.imagenes .s1,
+#foto2:checked~.imagenes .s2,
+#foto3:checked~.imagenes .s3,
+#foto4:checked~.imagenes .s4,
+#foto5:checked~.imagenes .s5,
+#foto6:checked~.imagenes .s6,
+#foto7:checked~.imagenes .s7,
+#foto8:checked~.imagenes .s8 {
+    opacity: 1;
+    z-index: 1;
+}
+
+p {
+    text-align: justify;
+}
+
+/*  */
+/* Estilo para las redes sociales */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #007acc;
+}
+
+.social-icon i {
+    font-size: 24px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icon:hover {
+    color: #007acc;
+}
+
+/* Estilo general para la tabla */
+.tabla-oscar {
+    margin: 0 auto;
+    /* Centra la tabla horizontalmente */
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tabla-oscar th,
+.tabla-oscar td {
+    padding: 12px 15px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-oscar th {
+    color: #333;
+    font-weight: bold;
+    width: 30%;
+}
+
+.tabla-oscar a {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+}
+
+.tabla-oscar a:hover {
+    text-decoration: underline;
+}
+
+/* Media queries para hacer la página responsive */
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .audio-container {
+        padding: 0 10px;
+    }
+
+    .audio-block {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .centered {
+        font-size: 18px;
+    }
+
+    .tabla-oscar th,
+    .tabla-oscar td {
+        font-size: 12px;
+    }
+
+    .social-icon {
+        font-size: 14px;
+    }
+
+    header {
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
+/* PALETA DE COLORES */
+:root {
+    --yinmn-blue: #4e598c;
+    --white: #ffffff;
+    --sunset: #f9c784;
+    --sandy-brown: #fcaf58;
+    --pumpkin: #ff8c42;
+
+    /* Versión opcional en HSL (si prefieres usarla) */
+    --yinmn-blue-hsl: hsla(229, 28%, 43%, 1);
+    --white-hsl: hsla(0, 0%, 100%, 1);
+    --sunset-hsl: hsla(34, 91%, 75%, 1);
+    --sandy-brown-hsl: hsla(32, 96%, 67%, 1);
+    --pumpkin-hsl: hsla(23, 100%, 63%, 1);
+
+    /* Gradientes */
+    --gradient-top: linear-gradient(0deg, var(--yinmn-blue), var(--white), var(--sunset), var(--sandy-brown), var(--pumpkin));
+    --gradient-right: linear-gradient(90deg, var(--yinmn-blue), var(--white), var(--sunset), var(--sandy-brown), var(--pumpkin));
+    --gradient-bottom: linear-gradient(180deg, var(--yinmn-blue), var(--white), var(--sunset), var(--sandy-brown), var(--pumpkin));
+    --gradient-left: linear-gradient(270deg, var(--yinmn-blue), var(--white), var(--sunset), var(--sandy-brown), var(--pumpkin));
+    --gradient-top-right: linear-gradient(45deg, var(--yinmn-blue), var(--white), var(--sunset), var(--sandy-brown), var(--pumpkin));
+    --gradient-bottom-right: linear-gradient(135deg, var(--yinmn-blue), var(--white), var(--sunset), var(--sandy-brown), var(--pumpkin));
+    --gradient-top-left: linear-gradient(225deg, var(--yinmn-blue), var(--white), var(--sunset), var(--sandy-brown), var(--pumpkin));
+    --gradient-bottom-left: linear-gradient(315deg, var(--yinmn-blue), var(--white), var(--sunset), var(--sandy-brown), var(--pumpkin));
+    --gradient-radial: radial-gradient(var(--yinmn-blue), var(--white), var(--sunset), var(--sandy-brown), var(--pumpkin));
+}
+
+/* Estilo para las imágenes dentro de las noticias */
+.news-image {
+    width: 100%;
+    /* Asegura que la imagen ocupe el 100% del contenedor */
+    height: 200px;
+    /* Establece una altura fija para todas las imágenes */
+    object-fit: cover;
+    /* Asegura que la imagen se recorte de manera uniforme si es necesario */
+    display: block;
+    /* Elimina el espacio debajo de la imagen */
+    border-radius: 8px;
+    /* Opcional: redondea las esquinas de la imagen */
+}
+
+/* Estilo para los enlaces en la sección de fuentes */
+.source a {
+    color: #007BFF;
+    /* Color azul */
+    text-decoration: none;
+    /* Quita el subrayado */
+}
+
+.source a:visited {
+    color: #007BFF;
+    /* Establece el color para los enlaces visitados */
+}
+
+.source a:hover {
+    text-decoration: underline;
+    /* Añade subrayado cuando el enlace es hovered */
+}
+
+/*  */
+.header-linea {
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente */
+    gap: 15px;
+    /* Espacio entre imagen y título */
+}
+
+.header-linea h1 {
+    margin: 0;
+}
+
+.titulo-noticias {
+    text-align: center;
+    /* background-color: #ff8c42; */
+    background-color: #ff8c42;
+
+
+    /* pumpkin */
+    color: white;
+    padding: 15px 30px;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin: 30px auto;
+    width: fit-content;
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/*  */
+
+/* Estilo general del formulario */
+#miFormulario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Inputs, select y textarea redondeados */
+#miFormulario input,
+#miFormulario select,
+#miFormulario textarea,
+#miFormulario button {
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Textarea ocupa las dos columnas */
+#miFormulario textarea {
+    grid-column: span 2;
+    resize: vertical;
+}
+
+/* Botón también ocupa dos columnas */
+#miFormulario button {
+    grid-column: span 2;
+    background-color: #023469;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#miFormulario button:hover {
+    /* background-color: #45a049; */
+    background-color: #007BFF;
+}
+
+.mensaje-exito {
+    color: red;
+    font-weight: bold;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    padding: 10px;
+}
+
+.item img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* .item p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+} */
+
+/* Estilo para el texto dentro de los elementos .item */
+.item p {
+    font-weight: bold;
+    /* Texto en negrita */
+    text-align: center;
+    /* Centrado del texto */
+    /* color: blue; */
+    color: black;
+    /* Color azul */
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.noticias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.noticia {
+    width: calc(50% - 10px);
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.noticia img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.noticia h2 {
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+.noticia a {
+    color: #333;
+    text-decoration: none;
+}
+
+.noticia a:hover {
+    text-decoration: underline;
+}
+
+.noticia p {
+    font-size: 1rem;
+    margin: 10px;
+    color: #555;
+}
+
+/* REVISADO  */
+
+/* RESET SOLO PARA ESTE MENÚ */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* MENÚ PRINCIPAL */
+nav>ul {
+    display: flex;
+    gap: 15px;
+}
+
+/* LI BASE */
+nav li {
+    position: relative;
+}
+
+/* SUBMENÚ GENERAL */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    min-width: 200px;
+    border: 1px solid #ccc;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 3px;
+    z-index: 9999;
+}
+
+/* MOSTRAR PRIMER NIVEL */
+.dropdown:hover>.submenu {
+    display: block;
+}
+
+/* ITEMS SUBMENÚ */
+.submenu li {
+    position: relative;
+}
+
+/* LINKS */
+.submenu a {
+    display: block;
+    padding: 6px;
+    text-decoration: none;
+    color: black;
+}
+
+.submenu a:hover {
+    background: #444;
+    color: white;
+}
+
+/* SUBMENÚ DE SUBMENÚ (LATERAL) */
+.submenu .submenu {
+    top: 0;
+    left: 100%;
+}
+
+/* MOSTRAR SUB-SUBMENÚ */
+.submenu li:hover>.submenu {
+    display: block;
+}
+
+/* ============================= */
+/* MODAL IMAGEN AMPLIADA */
+/* ============================= */
+
+.modal-imagen {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* Imagen ampliada */
+.modal-contenido {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
+
+    animation: zoom 0.3s ease;
+}
+
+/* Animación */
+@keyframes zoom {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Botón cerrar */
+.cerrar {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    font-size: 45px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Cursor mano en imágenes */
+.slide img {
+    cursor: pointer;
+}
+
+/* MEJORAS */
+/* ============================= */
+/* NOTICIAS PRINCIPALES */
+/* ============================= */
+
+.news-item {
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    padding: 20px;
+}
+
+.news-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+}
+
+.rojo-centro {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+
+.rojo-centro {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.rojo-centro:hover {
+    color: #0033ff;
+    /* azul intenso */
+}
+
+/*  */
+
+.audio-block h3 {
+    color: #00aa00;
+    /* Verde intenso */
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.audio-block h3:hover {
+    color: #0099ff;
+    /* Azul fluorescente */
+    text-shadow: 0 0 2px #00ccff;
+}
+
+/* MEJORA AUDIO */
+/* ================================================= */
+/* ESPECTRO SOLO PARA AUDIOS (AISLADO) */
+/* ================================================= */
+
+/* 🔥 VARIANTE NEÓN SOLO PARA ESTE BLOQUE */
+.audio-neon {
+    background-color: #000;
+    /* fondo negro */
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* tarjetas internas */
+.audio-neon .audio-block {
+    background: #111;
+    border: 2px solid #00e5ff;
+    border-radius: 12px;
+    padding: 15px;
+    color: #fff;
+    box-shadow: 0 0 10px #00e5ff;
+    transition: 0.3s;
+}
+
+/* hover llamativo */
+.audio-neon .audio-block:hover {
+    transform: scale(1.05);
+    border-color: #ff00ff;
+    box-shadow: 0 0 15px #ff00ff;
+}
+
+/* textos */
+.audio-neon h3,
+.audio-neon p {
+    color: #00e5ff;
+    text-shadow: 0 0 2px #00e5ff;
+}
+
+/* controles de audio (opcional: algunos navegadores limitan estilo) */
+.audio-neon audio {
+    width: 100%;
+    filter: drop-shadow(0 0 5px #ff00ff);
+}
+
+/* MEJORA TEXTO PUBLICIDAD */
+
+.publicidad-justificada {
+    background-color: #111;
+    color: #fff;
+
+    padding: 18px;
+    border-radius: 12px;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    text-align: left;
+    line-height: 1.5;
+
+    /*  letra más pequeña */
+    font-size: 14px;
+}
+
+/* título bien visible */
+.publicidad-justificada h3 {
+    color: red;
+    /* blanco puro */
+    font-size: 16px;
+    /* un poco más grande que el texto */
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* separadores simples */
+.publicidad-justificada hr {
+    border: none;
+    height: 1px;
+    background: grey;
+    margin: 10px 0;
+}
+
+/* párrafos más compactos */
+.publicidad-justificada p {
+    margin-bottom: 8px;
+    font-size: 12px;
+    /* color: white; */
+    color: #00e5ff;
+}
+
+/* móvil */
+@media (max-width: 600px) {
+    .publicidad-justificada {
+        padding: 14px;
+        font-size: 13px;
+    }
+
+    .publicidad-justificada h3 {
+        font-size: 15px;
+    }
+}
+
+/* MEJORAS */
+.rojo {
+    color: red;
+}
+
+.blanco {
+    color: white;
+}

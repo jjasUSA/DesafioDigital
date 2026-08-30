@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- -----------------------------------------------------------------------------------------  HEAD  -->
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <title>DesafioDigital Contacto</title>
+
+  <link rel="icon" href="../Principal/assets/Digital3.png" type="image/png">
+
+  <!-- Enlace al archivo de estilos externos -->
+  <link rel="stylesheet" href="../Principal/css/styles.css">
+  <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+
+</head>
+
+<!-- -----------------------------------------------------------------------------------------  BODY  -->
+
+<body>
+  <!-- ------------------------------ HEADER  Encabezado de la página -->
+  <header>
+    <nav>
+      <h1>DesafioDigital</h1>
+      <!-- Menú de navegación en este caso es Volver al HOME -->
+      <ul>
+        <li><a href="../Index.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- ------------------ -->
+
+  <!-- Contenedor principal que agrupa aside izquierdo, main y aside derecho -->
+  <div class="container">
+
+
+    <!-- ------------------------------ MAIN Sección principal de la página -->
+    <main>
+
+      <!-- ---------------------------------------------------- -->
+      <div class="centrado">
+        <div class="header-linea">
+          <img src="../Principal/assets/DesafioDigital.jpg" alt="Logo DesafioDigital" width="200" height="75">
+          <h1 class="titulo-noticias">Contacto</h1>
+        </div>
+      </div>
+      <!-- ---------------------------------------------------- -->
+
+      <div class="audio-container">
+        <div class="audio-block">
+          <h1>Contacto:</h1>
+
+          <!-- ------------------ -->
+          <form id="miFormulario">
+            <input type="text" placeholder="Nombre completo" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <input type="tel" placeholder="Teléfono">
+            <input type="number" placeholder="Código Postal" required>
+            <!-- ------------------ -->
+            <select required>
+              <option value="" disabled selected>Selecciona un asunto</option>
+              <option value="consulta">Consulta</option>
+              <option value="soporte">Soporte</option>
+              <option value="opinion">Opinión</option>
+              <option value="otro">Otro</option>
+            </select>
+            <!-- ------------------ -->
+            <textarea placeholder="Escribe tu mensaje aquí..." required></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+          <!-- ------------------ -->
+
+          <br>
+          <div id="mensaje" class="mensaje-exito" style="display: none;"></div>
+        </div>
+      </div>
+      <!-- ---------------------------------------------------- -->
+
+    </main>
+
+    <script src="../Contacto/js/app.js"></script>
+
+</body>
+
+</html>

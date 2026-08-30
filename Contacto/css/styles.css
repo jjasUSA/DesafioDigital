@@ -1,0 +1,109 @@
+/* =============================== */
+/* FORMULARIO CONTACTO */
+/* =============================== */
+
+#miFormulario{
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* TODOS LOS INPUTS */
+#miFormulario input,
+#miFormulario select,
+#miFormulario textarea{
+
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+
+    border: 2px solid #00ffff;
+    border-radius: 12px;
+
+    background-color: #000;
+    color: white;
+
+    font-size: 16px;
+
+    box-sizing: border-box;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+/* EFECTO AL HACER CLICK */
+#miFormulario input:focus,
+#miFormulario select:focus,
+#miFormulario textarea:focus{
+
+    border-color: #00ffff;
+
+    box-shadow:
+        0 0 10px #00ffff,
+        0 0 20px #00ffff;
+
+}
+
+/* PLACEHOLDER */
+#miFormulario input::placeholder,
+#miFormulario textarea::placeholder{
+
+    color: #bdbdbd;
+
+}
+
+/* TEXTAREA */
+#miFormulario textarea{
+
+    min-height: 150px;
+    resize: vertical;
+
+}
+
+/* BOTÓN */
+#miFormulario button{
+
+    width: 100%;
+    padding: 14px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #00ffff;
+    color: black;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* HOVER BOTÓN */
+#miFormulario button:hover{
+
+    background: #00cccc;
+
+    box-shadow:
+        0 0 15px #00ffff,
+        0 0 30px #00ffff;
+
+}
+
+/* MENSAJE */
+.mensaje-exito{
+
+    margin-top: 20px;
+    padding: 15px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    background: black;
+
+    font-weight: bold;
+
+}

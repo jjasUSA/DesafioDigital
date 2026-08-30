@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #e2e8f0;
+    padding: 20px;
+}
+
+/* ================= ANCHO ================= */
+
+#contenido {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* ================= TITULO ================= */
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ================= MENU ================= */
+
+#menu {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+#menu button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* ================= INPUTS ================= */
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+/* ================= TOOLBAR ================= */
+
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.toolbar button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    min-width: 140px;
+}
+
+/* ================= VERDE ================= */
+
+.btn-green {
+    background: #16a34a;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    min-width: 140px;
+}
+
+/* ================= IMPORTAR ================= */
+
+.file-btn {
+    background: #16a34a;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    min-width: 140px;
+    text-align: center;
+}
+
+.file-btn input {
+    display: none;
+}
+
+/* ================= CAJAS ================= */
+
+.caja {
+    background: #0f172a;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* ================= FILAS ================= */
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botones {
+    display: flex;
+    gap: 8px;
+}
+
+/* ================= PALABRAS AZULES ================= */
+
+.palabra-ingles {
+    color: #00bfff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ================= TEST ================= */
+
+.opcion {
+    padding: 2px 4px;
+    margin: 2px 0;
+    border-radius: 6px;
+    line-height: 1.2;
+}
+
+/* ================= RESULTADOS ================= */
+
+.azul {
+    background: #cce5ff !important;
+    color: black !important;
+}
+
+.rosa {
+    background: #ffb6c1 !important;
+    color: black !important;
+}
+
+.verde {
+    background: #ccffcc !important;
+    color: black !important;
+}
+
+
+/*  */
+/* === MENÚ DE NAVEGACIÓN === */
+nav {
+    background-color: #444;
+    /* Color de fondo más claro que el header */
+    display: flex;
+    justify-content: space-between;
+    /* h1 a la izquierda, menú a la derecha */
+    align-items: center;
+    /* alinea verticalmente */
+    padding: 0 20px;
+    /* opcional, espacio horizontal */
+
+}
+
+nav ul {
+    list-style: none;
+    /* Quita los puntos de la lista */
+    display: flex;
+    /* Muestra los ítems del menú en línea */
+    justify-content: center;
+    /* Centra los elementos horizontalmente */
+    gap: 20px;
+    /* Espacio entre elementos del menú */
+    padding: 10px 0;
+    /* Espaciado arriba y abajo del menú */
+}
+
+nav ul li a {
+    color: white;
+    /* Texto blanco */
+    text-decoration: none;
+    /* Sin subrayado */
+    font-weight: bold;
+    /* Texto en negrita */
+    padding: 5px 10px;
+    /* Espaciado interno alrededor del enlace */
+    transition: background-color 0.3s, color 0.3s;
+    /* Transición suave al hacer hover */
+}
+
+nav ul li a:hover {
+    color: rgb(81, 245, 245);
+    /* Cambia el color del texto al pasar el mouse */
+    background-color: #555;
+    /* Cambia el fondo al pasar el mouse */
+    border-radius: 5px;
+    /* Bordes redondeados para el efecto hover */
+}
+
+nav h1 {
+    margin: 0;
+    /* Quita margen por defecto */
+    font-size: 24px;
+}
+
+/* === CONTENEDOR PRINCIPAL === */
+.container {
+    flex: 1;
+    /* Ocupa todo el espacio entre header y footer */
+    display: flex;
+    /* Usamos flexbox para organizar aside - main - aside */
+    padding: 20px;
+    /* Espaciado interno */
+    gap: 20px;
+    /* Espacio entre columnas */
+    overflow: auto;
+    /* Aparece scroll si el contenido desborda */
+    min-height: 0;
+    /* Previene errores de altura en flexbox */
+}

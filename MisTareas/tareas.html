@@ -1,0 +1,49 @@
+<!-- REVISION OK 12-05-2026 -->
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas</title>
+    <link rel="icon" href="../Principal/assets/Digital3.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- VOLVER -->
+    <a href="../index.html" class="volver-menu">◀️ Volver al menú</a>
+    <!-- USUARIO -->
+    <h3 id="usuario-activo"></h3>
+    <button onclick="cerrarSesion()">Cerrar sesión</button>
+
+    <!-- FORM -->
+    <div class="primer">
+        <p>Nueva tarea</p>
+        <form id="form-tarea">
+            <input type="text" id="nueva-tarea" placeholder="Nueva tarea...">
+            <button type="submit">Agregar</button>
+        </form>
+    </div>
+
+    <div id="mensaje"></div>
+
+    <div class="second">
+        <p id="contador">Pendientes: 0 / Completadas: 0</p>
+        <ul id="lista"></ul>
+        <nav>
+            <button id="btn1" class="menu-btn">Todas</button>
+            <button id="btn2" class="menu-btn">Pendientes</button>
+            <button id="btn3" class="menu-btn">Completadas</button>
+        </nav>
+    </div>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

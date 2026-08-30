@@ -1,0 +1,522 @@
+[
+  {
+    "ing": "the",
+    "esp": "el / la / los / las"
+  },
+  {
+    "ing": "be",
+    "esp": "ser / estar"
+  },
+  {
+    "ing": "to",
+    "esp": "a / hacia / infinitivo"
+  },
+  {
+    "ing": "of",
+    "esp": "de"
+  },
+  {
+    "ing": "and",
+    "esp": "y"
+  },
+  {
+    "ing": "a",
+    "esp": "un / una"
+  },
+  {
+    "ing": "in",
+    "esp": "en"
+  },
+  {
+    "ing": "that",
+    "esp": "que / ese"
+  },
+  {
+    "ing": "have",
+    "esp": "tener"
+  },
+  {
+    "ing": "I",
+    "esp": "yo"
+  },
+  {
+    "ing": "it",
+    "esp": "eso / lo"
+  },
+  {
+    "ing": "for",
+    "esp": "para"
+  },
+  {
+    "ing": "not",
+    "esp": "no"
+  },
+  {
+    "ing": "on",
+    "esp": "sobre / en"
+  },
+  {
+    "ing": "with",
+    "esp": "con"
+  },
+  {
+    "ing": "he",
+    "esp": "él"
+  },
+  {
+    "ing": "as",
+    "esp": "como"
+  },
+  {
+    "ing": "you",
+    "esp": "tú / usted"
+  },
+  {
+    "ing": "do",
+    "esp": "hacer"
+  },
+  {
+    "ing": "at",
+    "esp": "en / a"
+  },
+  {
+    "ing": "this",
+    "esp": "este / esto"
+  },
+  {
+    "ing": "but",
+    "esp": "pero"
+  },
+  {
+    "ing": "his",
+    "esp": "su (de él)"
+  },
+  {
+    "ing": "by",
+    "esp": "por / cerca de"
+  },
+  {
+    "ing": "from",
+    "esp": "de / desde"
+  },
+  {
+    "ing": "they",
+    "esp": "ellos"
+  },
+  {
+    "ing": "we",
+    "esp": "nosotros"
+  },
+  {
+    "ing": "say",
+    "esp": "decir"
+  },
+  {
+    "ing": "her",
+    "esp": "su (de ella)"
+  },
+  {
+    "ing": "she",
+    "esp": "ella"
+  },
+  {
+    "ing": "or",
+    "esp": "o"
+  },
+  {
+    "ing": "an",
+    "esp": "un / una"
+  },
+  {
+    "ing": "will",
+    "esp": "futuro / voluntad"
+  },
+  {
+    "ing": "my",
+    "esp": "mi"
+  },
+  {
+    "ing": "one",
+    "esp": "uno"
+  },
+  {
+    "ing": "all",
+    "esp": "todo"
+  },
+  {
+    "ing": "would",
+    "esp": "haría / condicional"
+  },
+  {
+    "ing": "there",
+    "esp": "ahí / allí"
+  },
+  {
+    "ing": "their",
+    "esp": "su (de ellos)"
+  },
+  {
+    "ing": "what",
+    "esp": "qué"
+  },
+  {
+    "ing": "so",
+    "esp": "así / tan"
+  },
+  {
+    "ing": "up",
+    "esp": "arriba"
+  },
+  {
+    "ing": "out",
+    "esp": "fuera"
+  },
+  {
+    "ing": "if",
+    "esp": "si"
+  },
+  {
+    "ing": "about",
+    "esp": "sobre / acerca de"
+  },
+  {
+    "ing": "who",
+    "esp": "quién"
+  },
+  {
+    "ing": "get",
+    "esp": "obtener / conseguir"
+  },
+  {
+    "ing": "which",
+    "esp": "cuál / que"
+  },
+  {
+    "ing": "go",
+    "esp": "ir"
+  },
+  {
+    "ing": "me",
+    "esp": "me / a mí"
+  },
+  {
+    "ing": "when",
+    "esp": "cuando"
+  },
+  {
+    "ing": "make",
+    "esp": "hacer / fabricar"
+  },
+  {
+    "ing": "can",
+    "esp": "poder"
+  },
+  {
+    "ing": "like",
+    "esp": "gustar / como"
+  },
+  {
+    "ing": "time",
+    "esp": "tiempo"
+  },
+  {
+    "ing": "no",
+    "esp": "no"
+  },
+  {
+    "ing": "just",
+    "esp": "solo / justo"
+  },
+  {
+    "ing": "him",
+    "esp": "a él"
+  },
+  {
+    "ing": "know",
+    "esp": "saber / conocer"
+  },
+  {
+    "ing": "take",
+    "esp": "tomar / coger"
+  },
+  {
+    "ing": "people",
+    "esp": "personas"
+  },
+  {
+    "ing": "into",
+    "esp": "dentro de"
+  },
+  {
+    "ing": "year",
+    "esp": "año"
+  },
+  {
+    "ing": "your",
+    "esp": "tu / su"
+  },
+  {
+    "ing": "good",
+    "esp": "bueno"
+  },
+  {
+    "ing": "some",
+    "esp": "algunos"
+  },
+  {
+    "ing": "could",
+    "esp": "podría"
+  },
+  {
+    "ing": "them",
+    "esp": "ellos (objeto)"
+  },
+  {
+    "ing": "see",
+    "esp": "ver"
+  },
+  {
+    "ing": "other",
+    "esp": "otro"
+  },
+  {
+    "ing": "than",
+    "esp": "que (comparación)"
+  },
+  {
+    "ing": "then",
+    "esp": "entonces"
+  },
+  {
+    "ing": "now",
+    "esp": "ahora"
+  },
+  {
+    "ing": "look",
+    "esp": "mirar"
+  },
+  {
+    "ing": "only",
+    "esp": "solo"
+  },
+  {
+    "ing": "come",
+    "esp": "venir"
+  },
+  {
+    "ing": "its",
+    "esp": "su (de eso)"
+  },
+  {
+    "ing": "over",
+    "esp": "sobre / más de"
+  },
+  {
+    "ing": "think",
+    "esp": "pensar"
+  },
+  {
+    "ing": "also",
+    "esp": "también"
+  },
+  {
+    "ing": "back",
+    "esp": "atrás / volver"
+  },
+  {
+    "ing": "after",
+    "esp": "después"
+  },
+  {
+    "ing": "use",
+    "esp": "usar"
+  },
+  {
+    "ing": "two",
+    "esp": "dos"
+  },
+  {
+    "ing": "how",
+    "esp": "cómo"
+  },
+  {
+    "ing": "our",
+    "esp": "nuestro"
+  },
+  {
+    "ing": "work",
+    "esp": "trabajo / trabajar"
+  },
+  {
+    "ing": "first",
+    "esp": "primero"
+  },
+  {
+    "ing": "well",
+    "esp": "bien"
+  },
+  {
+    "ing": "way",
+    "esp": "camino / forma"
+  },
+  {
+    "ing": "even",
+    "esp": "incluso"
+  },
+  {
+    "ing": "new",
+    "esp": "nuevo"
+  },
+  {
+    "ing": "want",
+    "esp": "querer"
+  },
+  {
+    "ing": "because",
+    "esp": "porque"
+  },
+  {
+    "ing": "any",
+    "esp": "cualquier / alguno"
+  },
+  {
+    "ing": "these",
+    "esp": "estos"
+  },
+  {
+    "ing": "give",
+    "esp": "dar"
+  },
+  {
+    "ing": "day",
+    "esp": "día"
+  },
+  {
+    "ing": "most",
+    "esp": "la mayoría"
+  },
+  {
+    "ing": "us",
+    "esp": "nos / a nosotros"
+  },
+  {
+    "ing": "is",
+    "esp": "es / está"
+  },
+  {
+    "ing": "are",
+    "esp": "son / están"
+  },
+  {
+    "ing": "was",
+    "esp": "era / estaba"
+  },
+  {
+    "ing": "were",
+    "esp": "eran / estaban"
+  },
+  {
+    "ing": "been",
+    "esp": "sido / estado"
+  },
+  {
+    "ing": "has",
+    "esp": "ha / tiene"
+  },
+  {
+    "ing": "had",
+    "esp": "había / tuvo"
+  },
+  {
+    "ing": "did",
+    "esp": "hizo"
+  },
+  {
+    "ing": "done",
+    "esp": "hecho"
+  },
+  {
+    "ing": "said",
+    "esp": "dicho"
+  },
+  {
+    "ing": "help",
+    "esp": "ayudar"
+  },
+  {
+    "ing": "tell",
+    "esp": "decir / contar"
+  },
+  {
+    "ing": "ask",
+    "esp": "preguntar"
+  },
+  {
+    "ing": "feel",
+    "esp": "sentir"
+  },
+  {
+    "ing": "try",
+    "esp": "intentar"
+  },
+  {
+    "ing": "leave",
+    "esp": "dejar / irse"
+  },
+  {
+    "ing": "call",
+    "esp": "llamar"
+  },
+  {
+    "ing": "put",
+    "esp": "poner"
+  },
+  {
+    "ing": "mean",
+    "esp": "significar"
+  },
+  {
+    "ing": "keep",
+    "esp": "mantener"
+  },
+  {
+    "ing": "let",
+    "esp": "dejar"
+  },
+  {
+    "ing": "begin",
+    "esp": "empezar"
+  },
+  {
+    "ing": "seem",
+    "esp": "parecer"
+  },
+  {
+    "ing": "need",
+    "esp": "necesitar"
+  },
+  {
+    "ing": "become",
+    "esp": "convertirse"
+  },
+  {
+    "ing": "leave",
+    "esp": "irse / dejar"
+  },
+  {
+    "ing": "put",
+    "esp": "poner"
+  },
+  {
+    "ing": "mean",
+    "esp": "significar"
+  },
+  {
+    "ing": "keep",
+    "esp": "mantener"
+  },
+  {
+    "ing": "Me too",
+    "esp": "Yo también"
+  }
+]
